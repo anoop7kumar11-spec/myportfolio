@@ -61,9 +61,9 @@ def home():
             {'name': 'NIIT Career Essentials', 'issuer': 'NIIT', 'year': '2023'}
         ],
         'contact': {
-            'email': 'anoop7kumar78@gmail.com',
+            'email': 'anoop7kumar11@gmail.com',
             'phone': '',  # Placeholder, as phone not specified
-            'github': 'https://github.com/anoopkumar',
+            'github': 'https://github.com/anoop7kumar11-spec',
             'linkedin': 'https://linkedin.com/in/anoopkumar',
             'twitter': 'https://twitter.com/anoopkumar',
             'instagram': 'https://instagram.com/anoopkumar'

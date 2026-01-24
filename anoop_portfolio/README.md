@@ -1,12 +1,3 @@
-<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/b0b94f98-5472-4c6c-8afe-a8969faadd4c" />
-<img width="1914" height="901" alt="image" src="https://github.com/user-attachments/assets/76b55dd1-6ec0-45b3-977f-608984aca43f" />
-<img width="1898" height="890" alt="image" src="https://github.com/user-attachments/assets/b69435da-7306-47f6-97a7-884ef05f27fb" />
-<img width="1919" height="952" alt="image" src="https://github.com/user-attachments/assets/02c31cbd-a5c5-4d26-b939-206b78245931" />
-<img width="1910" height="952" alt="image" src="https://github.com/user-attachments/assets/fdf65bd0-2145-48f6-8f58-945163a22388" />
-
-
-
-
 # Anoop's Portfolio
 
 A dynamic portfolio website for Anoop, a BCA student and web developer, built with Flask.
@@ -83,4 +74,3 @@ This Flask app can be deployed to platforms like Heroku, AWS, or DigitalOcean. E
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
-
