@@ -7,58 +7,71 @@ app = Flask(__name__)
 def home():
     # Data for the portfolio
     portfolio_data = {
-        'name': 'Anoop',
-        'title': 'BCA Student & Web Developer',
-        'introduction': 'Hello! I\'m Anoop, a final year BCA student based in India. I enjoy creating things that live on the internet. My interest in web development started back in 2023 when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS is pretty fun!',
-        'education': {
-            'course': 'Bachelor of Computer Applications (BCA)',
-            'institution': 'Your University Name',
-            'year': 'Final Year (2026)',
-            'specialization': 'Computer Science'
-        },
-        'skills': [
-            {'name': 'HTML5', 'icon': 'fab fa-html5', 'color': '#e34c26'},
-            {'name': 'CSS3', 'icon': 'fab fa-css3-alt', 'color': '#264de4'},
-            {'name': 'JavaScript', 'icon': 'fab fa-js', 'color': '#f0db4f'},
-            {'name': 'React', 'icon': 'fab fa-react', 'color': '#61dbfb'},
-            {'name': 'Java', 'icon': 'fab fa-java', 'color': '#5382a1'},
-            {'name': 'Git', 'icon': 'fab fa-git-alt', 'color': '#f1502f'}
+        'name': 'Anoop Kumar',
+        'title': 'Web Developer | BCA Scholar',
+        'introduction': 'Detail-oriented BCA student proficient in building user-friendly and visually appealing web solutions. Fluent in English and Hindi.',
+        'education': [
+            {
+                'course': 'Bachelor of Computer Applications (BCA)',
+                'institution': 'Trinity College Jalandhar',
+                'year': '2026',
+                'specialization': 'Computer Science',
+                'image': '/static/images/tt.jpg'
+            },
+            {
+                'course': 'Higher Secondary Education',
+                'institution': 'D.s.s.d. Sr. Sec. School',
+                'year': 'Completed',
+                'specialization': '',
+                'image': '/static/images/dssd.jpeg'
+            }
         ],
+        'skills': {
+            'Web Dev': [
+                {'name': 'HTML', 'icon': 'fab fa-html5', 'color': '#e34c26'},
+                {'name': 'CSS', 'icon': 'fab fa-css3-alt', 'color': '#264de4'},
+                {'name': 'JavaScript', 'icon': 'fab fa-js', 'color': '#f0db4f'}
+            ],
+            'Programming': [
+                {'name': 'Python', 'icon': 'fab fa-python', 'color': '#3776ab'},
+                {'name': 'Java', 'icon': 'fab fa-java', 'color': '#5382a1'},
+                {'name': 'C++', 'icon': 'fas fa-code', 'color': '#00599c'}
+            ],
+            'Data & Tools': [
+                {'name': 'SQL', 'icon': 'fas fa-database', 'color': '#336791'},
+                {'name': 'MySQL', 'icon': 'fas fa-server', 'color': '#4479a1'},
+                {'name': 'Data Structures', 'icon': 'fas fa-sitemap', 'color': '#ff6b35'},
+                {'name': 'Algorithms', 'icon': 'fas fa-cogs', 'color': '#ff6b35'},
+                {'name': 'MS Office', 'icon': 'fas fa-file-alt', 'color': '#d83b01'}
+            ],
+            'Design': [
+                {'name': 'Graphic Designing', 'icon': 'fas fa-palette', 'color': '#ff4081'}
+            ]
+        },
         'projects': [
             {
-                'title': 'E-Commerce Dashboard',
-                'description': 'A comprehensive admin dashboard for managing inventory, viewing sales analytics, and tracking user data.',
-                'image': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'tags': ['HTML', 'CSS Grid', 'JS']
-            },
-            {
-                'title': 'Weather App',
-                'description': 'Real-time weather application using OpenWeather API. Features geolocation and 5-day forecasting.',
-                'image': 'https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                'tags': ['API', 'Async/Await']
-            },
-            {
-                'title': 'Student Management System',
-                'description': 'A full CRUD application for universities to manage student records securely with login authentication.',
-                'image': 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1302&q=80',
-                'tags': ['Java', 'SQL', 'Web']
+                'title': 'Gaming Console E-commerce Website',
+                'description': 'A fully functional e-commerce platform for gaming consoles featuring product listings, shopping cart functionality, animated videos, and order management system.',
+                'image': '/static/images/ps.png',
+                'tags': ['HTML', 'CSS']
             }
         ],
         'certifications': [
-            {'name': 'Placeholder Certification 1', 'issuer': 'Issuer Name', 'year': '2024'},
-            {'name': 'Placeholder Certification 2', 'issuer': 'Issuer Name', 'year': '2025'}
+            {'name': 'Swayam Introduction to Cyber Security', 'issuer': 'Swayam', 'year': '2024'},
+            {'name': 'NIIT Career Essentials', 'issuer': 'NIIT', 'year': '2023'}
         ],
         'contact': {
-            'email': 'anoop@example.com',
-            'github': 'https://github.com/anoop',
-            'linkedin': 'https://linkedin.com/in/anoop',
-            'twitter': 'https://twitter.com/anoop',
-            'instagram': 'https://instagram.com/anoop'
+            'email': 'anoop7kumar11@gmail.com',
+            'phone': '',  # Placeholder, as phone not specified
+            'github': 'https://github.com/anoop7kumar11-spec',
+            'linkedin': 'https://linkedin.com/in/anoopkumar',
+            'twitter': 'https://twitter.com/anoopkumar',
+            'instagram': 'https://instagram.com/anoopkumar'
         },
         'stats': [
-            {'number': '10+', 'label': 'Projects'},
-            {'number': '3+', 'label': 'Years Code'},
-            {'number': '20+', 'label': 'Repos'}
+            {'number': '5+', 'label': 'Projects'},
+            {'number': '2+', 'label': 'Years Code'},
+            {'number': '10+', 'label': 'Skills'}
         ]
     }
     return render_template('index.html', data=portfolio_data)
@@ -68,4 +81,5 @@ def download_resume():
     return send_from_directory('static', 'resume.pdf', as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)

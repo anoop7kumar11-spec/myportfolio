@@ -1,6 +1,6 @@
-// 1. Typewriter Effect
+// 1. Typewriter Eff
 const textElement = document.getElementById('typewriter');
-const phrases = ["Full Stack Web Developer", "Java Enthusiast", "UI/UX Designer", "Problem Solver"];
+const phrases = ["Full Stack Web Developer", "MERN Stack Enthusiast", "React.js Specialist", "Node.js Developer", "MongoDB Expert"];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -28,7 +28,6 @@ function type() {
     }
 }
 document.addEventListener('DOMContentLoaded', type);
-
 // 2. Active Scroll Link
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-links a');
